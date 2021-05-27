@@ -1,0 +1,18 @@
+.bg-purple {
+  background-color: #601df0;
+}
+
+.bg-space {
+  background: url("../images/slow_stars.gif");
+  background-size: cover;
+}
+
+.jumbotron {
+  max-height: 400px;
+}
+
+.flex-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
