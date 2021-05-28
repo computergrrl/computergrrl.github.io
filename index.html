@@ -8,11 +8,9 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/5bcbb10964.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/custom.css"> -->
+  <link rel="stylesheet" href="css/custom.css">
   <title>Amber Stevens</title>
 </head>
-
-<body>
 
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- My Nav Bar-->
@@ -43,7 +41,7 @@
 
       </div>
       <div class="flex-image">
-        <img src="images/me-resize.jpeg" class="img-fluid img-thumbnail h-50 d-none d-sm-block mt-lg-3">
+        <img src="images/me-resize.jpeg" alt="photo of Amber Stevens" class="img-fluid img-thumbnail h-50 d-none d-sm-block mt-lg-3">
       </div>
 
     </div><!-- END OF OMG HI -->
@@ -108,7 +106,7 @@
           
         </div>
 
-
+    <!--THIS IS SECOND MODAL FOR TEXT MESSAGING OPTION-->
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -119,8 +117,12 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <label for="recipient-name" class="col-form-label">Your name:</label>
+                <input type="text" class="form-control" id="user-name">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Your email:</label>
+                <input type="text" class="form-control" id="user-email">
               </div>
               <div class="mb-3">
                 <label for="message-text" class="col-form-label">Message:</label>
@@ -130,7 +132,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button type="button" class="btn btn-primary" onclick="messageSent()" data-bs-dismiss="modal">Send message</button>
           </div>
         </div>
       </div>
