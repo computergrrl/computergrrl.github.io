@@ -16,3 +16,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.svg {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+}
