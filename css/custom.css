@@ -22,3 +22,27 @@
   height: 150px;
   padding: 5px;
 }
+
+.port-card {
+  transition: transform 0.5s ease-out;
+}
+
+.port-card:hover {
+  transform: scale(1.1, 1.1) translate(-5px, -5px);
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(100, 100, 100, 0.6);
+  z-index: 100;
+
+}
+
+.modal-body img {
+  max-width: 100%;
+}

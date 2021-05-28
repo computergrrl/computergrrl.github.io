@@ -1,4 +1,12 @@
 const portfolio = document.querySelector("#port");
+const modalContainer = document.getElementById("exampleModal");
+const overlay = document.querySelector("#overlay");
+var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+  keyboard: false
+})
+let index;
+
+
 
 const portfolioData = [
 
@@ -49,17 +57,63 @@ const portfolioData = [
 
 portfolioData.forEach((project, index) => {
   portfolio.innerHTML += `
-  <div class="col-md-6 col-lg-4" data-index=${index}>
-  <div class="card mb-3">
-    <img class="card-img-top" src="${project.img}" alt="image of ${project.title}">
-    <div class="card-body">
-      <h4 class="card-title text-center">${project.title}</h4>
-      <p class="card-text text-center">${project.shortDescription}</p>
+  <div class="col-md-6 col-lg-4 tooltip-test port-card" data-index=${index}>
+    <div class="card mb-3">
+      <img class="card-img-top" src="${project.img}" alt="image of ${project.title}">
+      <div class="card-body">
+        <h4 class="card-title text-center">${project.title}</h4>
+        <p class="card-text text-center">${project.shortDescription}</p>
     </div>
   </div>
 </div>
 
   `
-} 
-  
-  );
+});
+
+ const cards = document.querySelectorAll(".port-card");
+// const modal = document.querySelector("#exampleModal");
+cards.forEach((card) => {
+
+  card.addEventListener("click", (e) => {
+
+      e.target.tagName === "H4" || 
+      e.target.tagName === "P" ? 
+      index = e.target.parentElement.parentElement.parentElement.getAttribute("data-index") :
+      index = e.target.parentElement.parentElement.getAttribute("data-index");
+      console.log(index);
+    let html = `
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">${portfolioData[index].title}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <img src="${portfolioData[index].img}">
+          ${portfolioData[index].fullDescription}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>`;
+    setInnerHtml(html);
+    myModal.show();
+  })
+
+});
+
+
+
+function getExampleModal() {
+  return document.getElementById('exampleModal');
+}
+
+function setInnerHtml(html) {
+  getExampleModal().querySelector('.modal-content').innerHTML = html;
+}
+
+
+
+
+
+
+
+
