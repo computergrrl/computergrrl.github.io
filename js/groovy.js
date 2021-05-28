@@ -98,7 +98,7 @@ cards.forEach((card) => {
           </div>
           <div class="modal-footer mx-auto">
             <a class="btn btn-primary" href="${portfolioData[index].demoLink}" target="_blank">Live Demo</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="messageSent()">Close</button>
             
           </div>`;
     setInnerHtml(html);
@@ -109,12 +109,16 @@ cards.forEach((card) => {
 
 
 
-function getExampleModal() {
+function getModal() {
   return document.getElementById('exampleModal');
 }
 
 function setInnerHtml(html) {
-  getExampleModal().querySelector('.modal-content').innerHTML = html;
+  getModal().querySelector('.modal-content').innerHTML = html;
+}
+
+function messageSent () {
+  window.alert("Your message has been sent. Messages are generally responded to within 1 business day. ");
 }
 
 
