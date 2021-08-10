@@ -98,7 +98,7 @@ cards.forEach((card) => {
           </div>
           <div class="modal-footer mx-auto">
             <a class="btn btn-primary" href="${portfolioData[index].demoLink}" target="_blank">Live Demo</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="messageSent()">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             
           </div>`;
     setInnerHtml(html);
