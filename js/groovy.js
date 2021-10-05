@@ -11,11 +11,11 @@ let index;
 const portfolioData = [
 
   {
-    img:  "images/Photo_gallery.png",
-    title: "Photo Gallery App",
-    shortDescription: "This app uses CSS Grid for a responsive layout of any collection of images.",
-    fullDescription: "This app uses CSS Grid for a responsive layout of any collection of images. Implementation of the Lightbox plugin is used so that viewer can click on any image and see the full screen image along with a descriptive caption",
-    demoLink: "http://computergrrl.com/CSS-Grid-Photo-Gallery",
+    img: "images/Name_that_movie.png",
+    title: "Name That Movie App",
+    shortDescription: "This app is movie trivia guessing game complete with sound bytes to help you guess the mystery phrase.",
+    fullDescription: "This app is version 2 of the  mystery phrase guessing game. In this version the user is given movie sound byte clues and must try to guess the name of the movie  before they run out of turns and the game is over. User can choose to use either the on screen keyboard or their computer keyboard to guess letters",
+    demoLink: "http://computergrrl.com/Name-That-Movie-Game",
   },
 
   {
@@ -28,18 +28,18 @@ const portfolioData = [
 
   {
     img: "images/Phrase_game_1.png",
-    title: "Mystery Phrase Game V1",
-    shortDescription: "This app is version 1 of a mystery phrase guessing game",
+    title: "Mystery Phrase Game",
+    shortDescription: "This app is a mystery phrase guessing game",
     fullDescription: "This app is a mystery phrase guessing game in which the user tries to guess the words in a galaxy space edition of hangman. User can choose to use either the on screen keyboard or their computer keyboard to guess letters before they run out of turns and the game is over. ",
     demoLink: "http://computergrrl.com/OOP-Mystery-Phrase-Game-JS",
   },
 
   {
-    img: "images/Name_that_movie.png",
-    title: "Name That Movie App",
-    shortDescription: "This app is version 2 of the  mystery phrase guessing game.",
-    fullDescription: "This app is version 2 of the  mystery phrase guessing game. In this version the user is given movie sound byte clues and must try to guess the name of the movie  before they run out of turns and the game is over. User can choose to use either the on screen keyboard or their computer keyboard to guess letters",
-    demoLink: "http://computergrrl.com/Name-That-Movie-Game",
+    img:  "images/Photo_gallery.png",
+    title: "Photo Gallery App",
+    shortDescription: "This app uses CSS Grid for a responsive layout of any collection of images.",
+    fullDescription: "This app uses CSS Grid for a responsive layout of any collection of images. Implementation of the Lightbox plugin is used so that viewer can click on any image and see the full screen image along with a descriptive caption",
+    demoLink: "http://computergrrl.com/CSS-Grid-Photo-Gallery",
   },
 
   {
