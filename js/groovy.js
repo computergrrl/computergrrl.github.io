@@ -13,7 +13,7 @@ const portfolioData = [
   {
     img: "images/Name_that_movie.png",
     title: "Name That Movie App",
-    shortDescription: "This app is movie trivia guessing game complete with sound bytes to help you guess the mystery phrase.",
+    shortDescription: "This app is a movie trivia word guessing game that includes fun audio clues",
     fullDescription: "This app is version 2 of the  mystery phrase guessing game. In this version the user is given movie sound byte clues and must try to guess the name of the movie  before they run out of turns and the game is over. User can choose to use either the on screen keyboard or their computer keyboard to guess letters",
     demoLink: "http://computergrrl.com/Name-That-Movie-Game",
   },
@@ -21,7 +21,7 @@ const portfolioData = [
   {
     img: "images/Web_style_guide.png",
     title: "Sass Web Style Guide",
-    shortDescription: "A Sass based web style guide for web designers.",
+    shortDescription: "A Sass based customizable web style guide for web designers",
     fullDescription: "A Sass based web style guide for web designers. This web style guide makes it easy for any web developer to implement the outlined style guides into their own website. Includes styling for links, buttons, typography, blockquotes and grid structure.",
     demoLink: "http://computergrrl.com/Web-Style-Guide-Sass",
   },
@@ -29,7 +29,7 @@ const portfolioData = [
   {
     img: "images/Phrase_game_1.png",
     title: "Mystery Phrase Game",
-    shortDescription: "This app is a mystery phrase guessing game",
+    shortDescription: "This app is a galaxy themed edition of a mystery phrase guessing game",
     fullDescription: "This app is a mystery phrase guessing game in which the user tries to guess the words in a galaxy space edition of hangman. User can choose to use either the on screen keyboard or their computer keyboard to guess letters before they run out of turns and the game is over. ",
     demoLink: "http://computergrrl.com/OOP-Mystery-Phrase-Game-JS",
   },
